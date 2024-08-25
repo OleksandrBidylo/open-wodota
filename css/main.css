@@ -1,0 +1,1741 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../img/main-background.jpg);
+  background-size: cover;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+/* //////// */
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: transparent;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link-item {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  gap: 100px;
+  margin-right: 20px;
+}
+.nav-item {
+}
+.c-t-button {
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.container {
+  width: 1440px;
+}
+
+/* ////modal lower///// */
+
+.modal-pudge {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.hero-modal {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 330px;
+  border: 1px solid white;
+  background-color: white;
+  position: absolute;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 24px;
+  bottom: 35%;
+  right: 35%;
+  border-radius: 10px;
+}
+
+.modal-icons {
+  display: flex;
+  gap: 30px;
+}
+.hero-name-modal {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.hero-picture {
+  margin-top: 20px;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+.modal-item {
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.modal-item:hover {
+  transform: scale(1.2);
+}
+
+.red-icon {
+  border-color: red;
+  background-color: red;
+}
+
+.green-icon {
+  border-color: green;
+  background-color: green;
+}
+.blue-icon {
+  border-color: aqua;
+  background-color: aqua;
+}
+
+.close-modal {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.close-modal:hover,
+:focus {
+  transform: scale(1.2);
+}
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-pudge.active {
+  display: flex;
+}
+
+/* //modal upper// */
+/* /////heroes-markup//// */
+.open-modal {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.pudge-button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.hero-img-modal {
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+
+.hero-img-modal:hover {
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+  transform: scale(1.2);
+}
+
+.atribute-wrap {
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+}
+.atribute-icon {
+}
+.atribute-subtitle {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+.heroes-list {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* /////bristle-modal//// */
+
+.modal-bristle {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-bristle.active {
+  display: flex;
+}
+.close-modal-bristle {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* //////dk////// */
+.modal-dk {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-dk.active {
+  display: flex;
+}
+.close-modal-dk {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* ////////// */
+.modal-shaker {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-shaker.active {
+  display: flex;
+}
+.close-modal-shaker {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* ////Lc///// */
+.modal-lc {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-lc.active {
+  display: flex;
+}
+.close-modal-lc {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* ///////// */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+/* //////// */
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: transparent;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link-item {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  gap: 100px;
+  margin-right: 20px;
+}
+.nav-item {
+}
+.c-t-button {
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.container {
+  width: 1440px;
+}
+
+/* ////modal lower///// */
+
+.modal-pudge {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.hero-modal {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 330px;
+  border: 1px solid white;
+  background-color: white;
+  position: absolute;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 24px;
+  bottom: 35%;
+  right: 35%;
+  border-radius: 10px;
+}
+
+.modal-icons {
+  display: flex;
+  gap: 30px;
+}
+.hero-name-modal {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.hero-picture {
+  margin-top: 20px;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+.modal-item {
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.modal-item:hover {
+  transform: scale(1.2);
+}
+
+.red-icon {
+  border-color: red;
+  background-color: red;
+}
+
+.green-icon {
+  border-color: green;
+  background-color: green;
+}
+.blue-icon {
+  border-color: aqua;
+  background-color: aqua;
+}
+
+.close-modal {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.close-modal:hover,
+:focus {
+  transform: scale(1.2);
+}
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-pudge.active {
+  display: flex;
+}
+
+/* //modal upper// */
+/* /////heroes-markup//// */
+.open-modal {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.pudge-button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.hero-img-modal {
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+
+.hero-img-modal:hover {
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+  transform: scale(1.2);
+}
+
+.atribute-wrap {
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+}
+.atribute-icon {
+}
+.atribute-subtitle {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+.heroes-list {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* /////bristle-modal//// */
+
+.modal-bristle {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-bristle.active {
+  display: flex;
+}
+.close-modal-bristle {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* //////dk////// */
+.modal-dk {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-dk.active {
+  display: flex;
+}
+.close-modal-dk {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* ////////// */
+.modal-shaker {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-shaker.active {
+  display: flex;
+}
+.close-modal-shaker {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* ////Lc///// */
+.modal-lc {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-lc.active {
+  display: flex;
+}
+.close-modal-lc {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* ////slardar///// */
+.modal-slardar {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-slardar.active {
+  display: flex;
+}
+.close-modal-slardar {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* ////tiny//// */
+.modal-tiny {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-tiny.active {
+  display: flex;
+}
+.close-modal-tiny {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* zombie */
+.modal-zombie {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-zombie.active {
+  display: flex;
+}
+.close-modal-zombie {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* am */
+.modal-am {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-am.active {
+  display: flex;
+}
+.close-modal-am {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* drow */
+.modal-drow {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-drow.active {
+  display: flex;
+}
+.close-modal-drow {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* jugger */
+.modal-jugger {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-jugger.active {
+  display: flex;
+}
+.close-modal-jugger {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* medusa */
+.modal-medusa {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block; /* Отображаем модальное окно и подложку */
+}
+.modal-medusa.active {
+  display: flex;
+}
+.close-modal-medusa {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* morf */
+.modal-morf {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-morf.active {
+  display: flex;
+}
+.close-modal-morf {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* naga */
+.modal-naga {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-naga.active {
+  display: flex;
+}
+.close-modal-naga {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* pa */
+.modal-pa {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-pa.active {
+  display: flex;
+}
+.close-modal-pa {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* slark */
+.modal-slark {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-slark.active {
+  display: flex;
+}
+.close-modal-slark {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* weaver */
+.modal-weaver {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-weaver.active {
+  display: flex;
+}
+.close-modal-weaver {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* dp */
+.modal-dp {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-dp.active {
+  display: flex;
+}
+.close-modal-dp {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* furion */
+.modal-furion {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-furion.active {
+  display: flex;
+}
+.close-modal-furion {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* disruptor */
+.modal-disruptor {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-disruptor.active {
+  display: flex;
+}
+.close-modal-disruptor {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* lion */
+.modal-lion {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-lion.active {
+  display: flex;
+}
+.close-modal-lion {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* muerta */
+.modal-muerta {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-muerta.active {
+  display: flex;
+}
+.close-modal-muerta {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* wd */
+.modal-wd {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-wd.active {
+  display: flex;
+}
+.close-modal-wd {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* dazzle */
+.modal-dazzle {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-dazzle.active {
+  display: flex;
+}
+.close-modal-dazzle {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* venga */
+.modal-venga {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-venga.active {
+  display: flex;
+}
+.close-modal-venga {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+/* ld */
+.modal-ld {
+  background-color: rgba(63, 62, 62, 0.363);
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  display: none;
+  left: 0;
+}
+
+.modal-owerlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 10;
+}
+
+.modal-owerlay.active {
+  display: block;
+}
+.modal-ld.active {
+  display: flex;
+}
+.close-modal-ld {
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}

@@ -110,42 +110,34 @@ itemBuildsMarkup.innerHTML = itemBuilds
   .map((build) => {
     const pugdeAgBuild = build.PudgeAg;
     return `
-    <h2 class="i-b-title">Item build(optional)</h2>
+   
       <ul class="heroes-itembuilds">
-        <li class="h-ib-item">
-            <p class="hero-ib-subtitle">Starting items</p>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item2}" alt="item-1" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item1}" alt="item-2" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item1}" alt="item-3" width="50" height="40" /></li>
+        
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item2}" alt="item-1" width="50" height="40" /></li>
             
-        </li>
-        <li class="h-ib-item">
-            <p class="hero-ib-subtitle">Early game</p>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item5}" alt="item-1" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item6}" alt="item-2" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item7}" alt="item-3" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item8}" alt="item-4" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item1}" alt="item-3" width="50" height="40" /></li>
+            
+        
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item5}" alt="item-1" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item6}" alt="item-2" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item7}" alt="item-3" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item8}" alt="item-4" width="50" height="40" /></li>
            
-        </li>
-        <li class="h-ib-item">
-            <p class="hero-ib-subtitle">Core items</p>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item9}" alt="item-1" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item10}" alt="item-2" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item11}" alt="item-3" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item12}" alt="item-4" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item18}" alt="item-4" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item19}" alt="item-4" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item20}" alt="item-4" width="50" height="40" /></li>
-        </li>
-
-        <li class="h-ib-item">
-            <p class="hero-ib-subtitle">Late game</p>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item13}" alt="item-1" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item14}" alt="item-2" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item15}" alt="item-3" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item16}" alt="item-4" width="50" height="40" /></li>
-            <li class="h-ib-list-item"><img src="${pugdeAgBuild.item17}" alt="item-4" width="50" height="40" /></li>
-        </li>
+      
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item9}" alt="item-1" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item10}" alt="item-2" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item11}" alt="item-3" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item12}" alt="item-4" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item18}" alt="item-4" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item19}" alt="item-4" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item20}" alt="item-4" width="50" height="40" /></li>
+       
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item13}" alt="item-1" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item14}" alt="item-2" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item15}" alt="item-3" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item16}" alt="item-4" width="50" height="40" /></li>
+            <li class="h-ib-list-item"><img class="itembuild-img" src="${pugdeAgBuild.item17}" alt="item-4" width="50" height="40" /></li>
+        
       </ul>`;
   })
   .join("");

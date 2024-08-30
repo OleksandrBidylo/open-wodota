@@ -24,6 +24,7 @@ const items = [
       venomSong: `../img/venomSong.png`,
     },
     coreItems: {
+      upBm: `../img/upBm.png`,
       bkb: `../img/bkb.png`,
       skullBasher: `../img/Skull_Basher_icon.webp`,
       desolator: "../img/Desolator_icon.webp",
@@ -85,10 +86,10 @@ const itemBuilds = [
       //////////////////////////////////////
       item5: items[0].earlyGame.powerThreads,
       item6: items[0].earlyGame.diffusalBlade,
-      item7: items[0].earlyGame.orchid,
+      item7: items[0].earlyGame.bladeMail,
       item8: items[0].earlyGame.venomSong,
       //////////////////////////////////////
-      item9: items[0].coreItems.bloodThorn,
+      item9: items[0].coreItems.upBm,
       item10: items[0].coreItems.skullBasher,
       item11: items[0].coreItems.bkb,
       item12: items[0].coreItems.satanic,
@@ -105,7 +106,7 @@ const itemBuilds = [
   },
 ];
 
-const itemBuildsMarkup = document.querySelector(".itemb");
+const itemBuildsMarkup = document.querySelector(".itemb-pudge-ag");
 itemBuildsMarkup.innerHTML = itemBuilds
   .map((build) => {
     const pugdeAgBuild = build.PudgeAg;
@@ -140,4 +141,5 @@ itemBuildsMarkup.innerHTML = itemBuilds
         
       </ul>`;
   })
+
   .join("");
